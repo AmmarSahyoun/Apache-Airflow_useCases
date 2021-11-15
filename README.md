@@ -4,7 +4,7 @@ Running various pipelines by docker-compose.
 Create resilient data pipelines and scale it :+1:
 
 
--[x] Best practices:
+-[ ] Best practices:
 - Develop DAG ->> SequentialExecutor 
 - Starting in Production ->> LocalExecutor
 - High Airflow usage ->> CeleryExecutor
