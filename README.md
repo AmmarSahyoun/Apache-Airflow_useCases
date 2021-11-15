@@ -1,8 +1,19 @@
 # Apache-Airflow_useCases
 Running various pipelines by docker-compose.
-* Create resilient data pipelines.
-* Apply advanced techniques to scale the pipelines.
 
--Run docker image: ~ docker-compose up --build
--Check running containers: ~ docker ps --format "table {{.Names}}:\t{{.Ports}}\t{{.Status}}"
--shut down comtainers: ~ docker-compose down
+Create resilient data pipelines and scale it :+1:
+
+
+-[x] Best practices:
+- Develop DAG ->> SequentialExecutor 
+- Starting in Production ->> LocalExecutor
+- High Airflow usage ->> CeleryExecutor
+- High spikes in Task usage ->> CeleryExecutor in Kubernetes
+
+# 
+
+````
+docker-compose up --build
+docker ps --format "table {{.Names}}:\t{{.Ports}}\t{{.Status}}"
+docker-compose down.
+````
