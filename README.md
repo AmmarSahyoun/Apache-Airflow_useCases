@@ -1,10 +1,12 @@
-# Apache-Airflow_useCases
-Running various pipelines by docker-compose.
-
-Create resilient data pipelines and scale it.
+# Apache-Airflow useCases
 
 
--[x] Best practices:
+Productionalizing Pipelines with Apache Airflow.
+
+Running various pipelines by docker-compose to get resilience data workflow.
+
+
+*[x] Best practices:
 - Develop DAG ->> SequentialExecutor 
 - Starting in Production ->> LocalExecutor
 - High Airflow usage ->> CeleryExecutor
